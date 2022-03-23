@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <!-- BS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- MAIN CSS -->
@@ -182,33 +185,36 @@
                 <li class="portfolio-list" data-filter="Crafts">CRAFTS</li>
             </ul>
             <div class="portfolio-products">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="portfolio-item Printing Illustration"><img src="./img/01.jpg" alt=""></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="portfolio-item Web Media"><img src="./img/02.jpg" alt=""></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="portfolio-item Web Printing"><img src="./img/07.jpg" alt=""></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="portfolio-item Web Media"><img src="./img/04.jpg" alt=""></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="portfolio-item Illustration"><img src="./img/05.jpg" alt=""></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="portfolio-item Web Crafts"><img src="./img/08.jpg" alt=""></div>
-                    </div>
-                    <div class="col-3">
-                        <div class="portfolio-item Printing Media Crafts Illustration"><img src="./img/06.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="portfolio-item Printing Media"><img src="./img/03.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="portfolio-item Printing Illustration">
+                    <img src="./img/01.jpg" alt="">
+                </div>
+
+                <div class="portfolio-item Web Media">
+                    <img src="./img/02.jpg" alt="">
+                </div>
+
+                <div class="portfolio-item Web Printing">
+                    <img src="./img/07.jpg" alt="">
+                </div>
+
+                <div class="portfolio-item Web Media">
+                    <img src="./img/04.jpg" alt="">
+                </div>
+
+                <div class="portfolio-item Illustration">
+                    <img src="./img/05.jpg" alt="">
+                </div>
+
+                <div class="portfolio-item Web Crafts">
+                    <img src="./img/08.jpg" alt="">
+                </div>
+
+                <div class="portfolio-item Printing Media Crafts Illustration">
+                    <img src="./img/06.jpg" alt="">
+                </div>
+
+                <div class="portfolio-item Printing Media">
+                    <img src="./img/03.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -236,6 +242,30 @@
             $(this).addClass('active').siblings().removeClass('active');
         })
 
+    </script>
+    <!-- CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script>
+        $('.banner-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            mouseDrag: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
     </script>
     <!-- BS -->
     <script src="./js/bootstrap.bundle.min.js"></script>

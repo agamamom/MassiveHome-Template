@@ -13,5 +13,18 @@
                 cursor: pointer;
             }
         }
+        .portfolio-products {
+            margin-top: 50px;
+            height: 569.612px;
+            display: flex;
+            flex-wrap: wrap;
+            .portfolio-item {
+                width: 25%;
+                img {
+                    height: 289px;
+                    width: fit-content;
+                }
+            }
+        }
     }
 }

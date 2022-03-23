@@ -400,4 +400,25 @@ header .navbar .navbar-collapse .nav-link.active {
   font-size: 14px;
   cursor: pointer;
 }
+
+.portfolio .portfolio-items .portfolio-products {
+  margin-top: 50px;
+  height: 569.612px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .portfolio-items .portfolio-products .portfolio-item {
+  width: 25%;
+}
+
+.portfolio .portfolio-items .portfolio-products .portfolio-item img {
+  height: 289px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 /*# sourceMappingURL=main.css.map */
