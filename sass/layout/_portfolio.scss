@@ -1,0 +1,17 @@
+.portfolio {
+    text-align: center;
+    .portfolio-items {
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 0 15px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: #a9a8a8;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}
