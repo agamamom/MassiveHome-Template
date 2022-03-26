@@ -23,6 +23,7 @@
                 width: 25%;
                 &:hover .portfolio-hover {
                     opacity: 1;
+                    z-index: 10;
                 }
                 &:hover .portfolio-hover .portfolio-actionBtn {
                     opacity: 1;
