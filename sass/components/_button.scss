@@ -1,0 +1,27 @@
+.team-joinBtn {
+    padding: 15px 30px;
+    color: #fff;
+    background: #222;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #d6b161;
+    }
+}
+.parallax-banner-btn {
+    padding: 15px 30px;
+    color: #fff;
+    background: $cl-2;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #ffffff;
+        color: #222;
+    }
+}
