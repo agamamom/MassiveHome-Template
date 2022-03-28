@@ -1,0 +1,19 @@
+.tab-parallax {
+    background: url(../../img/pattern-2.png);
+    .tab-iconBox {
+        .nav-item {
+            .nav-link {
+                padding: 35px 70px;
+                background: white;
+                border-radius: 0;
+                position: relative;
+                i {
+                    font-size: 36px;
+                }
+                svg {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

@@ -749,7 +749,7 @@ header .navbar .navbar-collapse .nav-link.active {
 }
 
 .blog .row .col-6:nth-child(1) {
-  padding-left: 104px;
+  padding-left: 14px;
   padding-right: 30px;
 }
 
@@ -865,6 +865,25 @@ header .navbar .navbar-collapse .nav-link.active {
 
 .blog .blog-content .blog-readMore:hover {
   color: #222;
+}
+
+.tab-parallax {
+  background: url(../../img/pattern-2.png);
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link {
+  padding: 35px 70px;
+  background: white;
+  border-radius: 0;
+  position: relative;
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link i {
+  font-size: 36px;
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link svg {
+  font-size: 36px;
 }
 
 .team-joinBtn {
