@@ -1,0 +1,19 @@
+.factor {
+    background: #1b1b1b;
+    color: $cl-1;
+    text-align: center;
+    .factor-icon {
+        margin-bottom: 10px;
+        i {
+            padding-right: 10px;
+            font-size: 36px;
+        }
+        span {
+            letter-spacing: 2px;
+            font-size: 36px;
+        }
+    }
+    p {
+        letter-spacing: 1px;
+    }
+}

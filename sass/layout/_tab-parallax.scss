@@ -1,19 +1,92 @@
 .tab-parallax {
     background: url(../../img/pattern-2.png);
     .tab-iconBox {
+        .nav-tabs {
+            border-bottom: none;
+        }
         .nav-item {
+            margin-right: 20px;
+            border: transparent;
             .nav-link {
                 padding: 35px 70px;
-                background: white;
+                background: rgba(34, 34, 34, 0.05);
                 border-radius: 0;
                 position: relative;
+                color: #434343;
+                border: transparent;
+                transition: all 0.3s;
                 i {
                     font-size: 36px;
                 }
                 svg {
                     font-size: 36px;
                 }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-width: 10px;
+                    border-color: #fff transparent transparent transparent;
+                    transition: all 0.3s;
+                    opacity: 0;
+                }
+                &.active {
+                    background-color: $cl-1;
+                    border: none;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-width: 10px;
+                        border-color: #fff transparent transparent transparent;
+                        border-style: solid;
+                        transition: all 0.3s;
+                        opacity: 1;
+                    }
+                }
+                &:hover {
+                    background-color: $cl-1;
+                    border: none;
+                }
+                &:hover:after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-width: 10px;
+                    border-color: #fff transparent transparent transparent;
+                    border-style: solid;
+                    transition: all 0.3s;
+                    opacity: 1;
+                }
             }
+        }
+    }
+    .tab-content {
+        padding: 38px 0 30px;
+        .container {
+            padding: 0;
+        }
+        h5 {
+            letter-spacing: 2px;
+            color: #7e7e7e;
+            font-size: 14px;
+        }
+        h2 {
+            margin-bottom: 60px;
+            letter-spacing: 2px;
+            font-weight: normal;
+            color: #333;
+            line-height: 1.5;
+            font-size: 30px;
         }
     }
 }

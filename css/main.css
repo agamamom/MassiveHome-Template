@@ -32,7 +32,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: white;
+  background: #bdbdbd;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -871,11 +871,24 @@ header .navbar .navbar-collapse .nav-link.active {
   background: url(../../img/pattern-2.png);
 }
 
+.tab-parallax .tab-iconBox .nav-tabs {
+  border-bottom: none;
+}
+
+.tab-parallax .tab-iconBox .nav-item {
+  margin-right: 20px;
+  border: transparent;
+}
+
 .tab-parallax .tab-iconBox .nav-item .nav-link {
   padding: 35px 70px;
-  background: white;
+  background: rgba(34, 34, 34, 0.05);
   border-radius: 0;
   position: relative;
+  color: #434343;
+  border: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .tab-parallax .tab-iconBox .nav-item .nav-link i {
@@ -884,6 +897,178 @@ header .navbar .navbar-collapse .nav-link.active {
 
 .tab-parallax .tab-iconBox .nav-item .nav-link svg {
   font-size: 36px;
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 10px;
+  border-color: #fff transparent transparent transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link.active {
+  background-color: #fff;
+  border: none;
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link.active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 10px;
+  border-color: #fff transparent transparent transparent;
+  border-style: solid;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link:hover {
+  background-color: #fff;
+  border: none;
+}
+
+.tab-parallax .tab-iconBox .nav-item .nav-link:hover:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 10px;
+  border-color: #fff transparent transparent transparent;
+  border-style: solid;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 1;
+}
+
+.tab-parallax .tab-content {
+  padding: 38px 0 30px;
+}
+
+.tab-parallax .tab-content .container {
+  padding: 0;
+}
+
+.tab-parallax .tab-content h5 {
+  letter-spacing: 2px;
+  color: #7e7e7e;
+  font-size: 14px;
+}
+
+.tab-parallax .tab-content h2 {
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  color: #333;
+  line-height: 1.5;
+  font-size: 30px;
+}
+
+.factor {
+  background: #1b1b1b;
+  color: #fff;
+  text-align: center;
+}
+
+.factor .factor-icon {
+  margin-bottom: 10px;
+}
+
+.factor .factor-icon i {
+  padding-right: 10px;
+  font-size: 36px;
+}
+
+.factor .factor-icon span {
+  letter-spacing: 2px;
+  font-size: 36px;
+}
+
+.factor p {
+  letter-spacing: 1px;
+}
+
+.testimonial {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.testimonial .testimonial-carousel {
+  width: 62%;
+  margin: 0 auto;
+}
+
+.testimonial .testimonial-carousel .testimonial-avatar {
+  width: 100px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+.testimonial .testimonial-carousel .testimonial-avatar img {
+  border-radius: 50%;
+}
+
+.testimonial .testimonial-carousel .testimonial-content {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+  color: #7e7e7e;
+  margin: 0 0 30px;
+}
+
+.testimonial .testimonial-carousel .testimonial-content .testimonial-meta {
+  margin-top: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #222;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.testimonial .testimonial-carousel .testimonial-content .testimonial-meta span {
+  display: block;
+  color: #7f7f7f;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.testimonial .testimonial-carousel .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  background: #eaeaea;
+  opacity: 0.5;
+}
+
+.testimonial .testimonial-carousel .owl-dots .owl-dot.active span {
+  opacity: 1;
+}
+
+.testimonial .testimonial-carousel .owl-dots .owl-dot:hover span {
+  opacity: 1;
+}
+
+.client .client-carousel .item {
+  margin: 20px;
+}
+
+.client .client-carousel .item img {
+  width: 100%;
 }
 
 .team-joinBtn {
