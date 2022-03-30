@@ -25,14 +25,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./img/logo-dark@2x.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -55,7 +55,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">ShortCodes <span class="indicator">+</span></a>
                         </li>
-                        <li class="nav-item border-right" style="margin-right: 36px">
+                        <li class="nav-item borderRight">
                             <a class="nav-link" href="#">Shop <span class="indicator">+</span></a>
                         </li>
                         <li class="nav-item">
@@ -776,9 +776,32 @@
             </div>
         </div>
         <div class="secondary-footer">
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 leftCol">
+                        <span>Copyright 2012 - 2015 Massive Theme by <a href="#">ThemeBucket</a> | All Rights
+                            Reserved</span>
+                    </div>
+                    <div class="col-6 rightCol">
+                        <div class="secondaryFooter-icon">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-solid fa-basketball"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- BACK TO TOP -->
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
@@ -794,8 +817,7 @@
             'delay': 10
         });
     </script>
-    <!-- MAIN JS -->
-    <script src="./js/main.js"></script>
+
     <!-- FILTER PORTFOLIO -->
     <script type="text/javascript">
         $(document).ready(function () {

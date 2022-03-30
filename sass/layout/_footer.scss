@@ -89,4 +89,48 @@ footer {
             }
         }
     }
+    .secondary-footer {
+        width: 100%;
+        padding: 35px 0;
+        border-top: 1px solid #2c2c2c;
+        background: #1b1b1b;
+        font-weight: normal;
+        .leftCol {
+            line-height: 35px;
+            span {
+                color: #6f7273;
+                a {
+                    color: $cl-1;
+                    transition: all 0.3s;
+                    text-decoration: none;
+                    &:hover {
+                        color: $cl-2;
+                    }
+                }
+            }
+        }
+        .rightCol {
+            margin-left: auto;
+            .secondaryFooter-icon {
+                float: right;
+                a {
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    border: 1px solid #5a5a5a;
+                    border-radius: 50%;
+                    line-height: 35px;
+                    display: inline-block;
+                    margin: 0 0 0 15px;
+                    color: #5a5a5a;
+                    font-size: 20px;
+                    transition: all 0.3s;
+                    &:hover {
+                        background: #7e7e7e;
+                        color: $cl-1;
+                    }
+                }
+            }
+        }
+    }
 }

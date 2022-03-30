@@ -27,3 +27,11 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(IP8) {
+    .banner {
+        .banner-content {
+            font-size: 30px;
+        }
+    }
+}

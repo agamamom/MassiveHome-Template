@@ -1,0 +1,39 @@
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+.back-to-top-wrapper {
+    // uncomment to visualize "track"
+    // outline: 1px solid red;
+    position: absolute;
+    top: $scrollLength;
+    right: 0.25rem;
+    bottom: 0;
+    width: 3em;
+    pointer-events: none;
+    z-index: 23;
+    .back-to-top-link {
+        position: fixed;
+        position: sticky;
+        pointer-events: all;
+        top: calc(100vh - 5rem);
+        // basic styling
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1rem;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s;
+        text-align: center;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+        &:hover {
+            background: $cl-2;
+            color: $cl-3;
+        }
+    }
+}
