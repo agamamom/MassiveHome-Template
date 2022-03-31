@@ -113,7 +113,7 @@
 // RESPONSIVE
 @include Responsive(XS) {
     .blog {
-        height: 1190px;
+        height: max-content;
         .title {
             font-size: 1.8rem;
         }
@@ -121,7 +121,7 @@
             width: 80%;
         }
         .row {
-            height: 530px;
+            height: max-content;
             .blog-img {
                 img {
                     width: 100%;
@@ -132,7 +132,7 @@
 }
 @include Responsive(IP8) {
     .blog {
-        height: 1081px;
+        height: max-content;
         .title {
             font-size: 1.8rem;
         }
@@ -140,7 +140,7 @@
             width: 80%;
         }
         .row {
-            height: 699.11px;
+            height: max-content;
             .blog-img {
                 img {
                     width: 100%;
@@ -151,7 +151,7 @@
 }
 @include Responsive(IPAD) {
     .blog {
-        height: 1240px;
+        height: max-content;
         .title {
             font-size: 1.8rem;
         }
@@ -159,7 +159,7 @@
             width: 80%;
         }
         .row {
-            height: 699.11px;
+            height: max-content;
             .blog-img {
                 img {
                     width: 100%;
@@ -168,3 +168,23 @@
         }
     }
 }
+@include Responsive(BIGSCREEN) {
+    .blog {
+        height: max-content;
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .row {
+            height: max-content;
+            .blog-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+

@@ -51,6 +51,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container-fluid {
   padding: 0 30px;
 }
@@ -95,7 +99,7 @@ ul {
 
 @media screen and (min-width: 414px) and (max-width: 736px) {
   .page-content {
-    padding: 50px 0;
+    padding: 90px 0;
   }
 }
 
@@ -202,7 +206,7 @@ ul {
   color: #d6b161;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .header {
     width: 100vw;
   }
@@ -379,6 +383,31 @@ ul {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .header {
+    width: 100vw;
+  }
+  .header .navbar {
+    padding: 0;
+  }
+  .header .navbar .container-fluid {
+    padding: 0 30px;
+  }
+  .header .navbar .navbar-brand {
+    height: 50px;
+  }
+  .header .navbar .navbar-brand img {
+    padding: 0;
+  }
+  .header .navbar button {
+    padding: 0.25rem 0rem;
+  }
+  .header .navbar button .navbar-toggler-icon i {
+    color: white;
+    font-size: 20px;
+  }
+}
+
 .banner {
   background-image: url(../../img/index-banner-2.jpg);
   position: relative;
@@ -413,7 +442,7 @@ ul {
   color: #fff;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .banner .banner-content {
     width: 100%;
   }
@@ -502,7 +531,7 @@ ul {
   color: #7e7e7e;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .features .title {
     font-size: 1.8rem;
   }
@@ -566,7 +595,7 @@ ul {
   vertical-align: middle;
   display: table;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .page-progress .page-progress__content h3 {
@@ -656,7 +685,7 @@ ul {
   left: 45%;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .page-progress .progress-overlay {
     display: none;
   }
@@ -688,6 +717,10 @@ ul {
 
 .portfolio {
   text-align: center;
+}
+
+.portfolio .portfolio-items .portfolio-list.active {
+  color: #222;
 }
 
 .portfolio .portfolio-items ul {
@@ -849,7 +882,7 @@ ul {
   border: 1px solid #fff;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .portfolio .title {
     font-size: 1.8rem;
   }
@@ -857,7 +890,14 @@ ul {
     width: 80%;
   }
   .portfolio .portfolio-items {
-    height: 2384px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .portfolio .portfolio-items .portfolio-products {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .portfolio .portfolio-items .portfolio-products .portfolio-item {
     width: 100%;
@@ -875,7 +915,14 @@ ul {
     width: 80%;
   }
   .portfolio .portfolio-items {
-    height: 2384px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .portfolio .portfolio-items .portfolio-products {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .portfolio .portfolio-items .portfolio-products .portfolio-item {
     width: 100%;
@@ -893,13 +940,46 @@ ul {
     width: 80%;
   }
   .portfolio .portfolio-items {
-    height: 1252px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .portfolio .portfolio-items .portfolio-products {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .portfolio .portfolio-items .portfolio-products .portfolio-item {
     width: 50%;
   }
   .portfolio .portfolio-items .portfolio-products .portfolio-item img {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio .title {
+    font-size: 1.8rem;
+  }
+  .portfolio .under-title {
+    width: 80%;
+  }
+  .portfolio .portfolio-items {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .portfolio .portfolio-items .portfolio-products {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .portfolio .portfolio-items .portfolio-products .portfolio-item {
+    width: 25%;
+  }
+  .portfolio .portfolio-items .portfolio-products .portfolio-item img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1082,7 +1162,7 @@ ul {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .team .title {
     font-size: 1.8rem;
   }
@@ -1166,7 +1246,7 @@ ul {
   font-size: 36px;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .parallax-banner h2 {
     font-size: 2.6rem;
   }
@@ -1312,9 +1392,11 @@ ul {
   color: #222;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .blog {
-    height: 1190px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .blog .title {
     font-size: 1.8rem;
@@ -1323,7 +1405,9 @@ ul {
     width: 80%;
   }
   .blog .row {
-    height: 530px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .blog .row .blog-img img {
     width: 100%;
@@ -1332,7 +1416,9 @@ ul {
 
 @media only screen and (min-width: 414px) and (max-width: 736px) {
   .blog {
-    height: 1081px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .blog .title {
     font-size: 1.8rem;
@@ -1341,7 +1427,9 @@ ul {
     width: 80%;
   }
   .blog .row {
-    height: 699.11px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .blog .row .blog-img img {
     width: 100%;
@@ -1350,7 +1438,9 @@ ul {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .blog {
-    height: 1240px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .blog .title {
     font-size: 1.8rem;
@@ -1359,7 +1449,31 @@ ul {
     width: 80%;
   }
   .blog .row {
-    height: 699.11px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .blog .row .blog-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .blog {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .blog .title {
+    font-size: 1.8rem;
+  }
+  .blog .under-title {
+    width: 80%;
+  }
+  .blog .row {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .blog .row .blog-img img {
     width: 100%;
@@ -1478,7 +1592,7 @@ ul {
   font-size: 30px;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .tab-parallax .tab-iconBox .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1544,6 +1658,26 @@ ul {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .tab-parallax .tab-iconBox .nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .tab-parallax .tab-iconBox .nav .nav-item {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .tab-parallax .tab-iconBox .nav .nav-item .nav-link {
+    text-align: center;
+  }
+  .tab-parallax .tab-content .tab-pane h2 {
+    font-size: 2rem;
+  }
+  .tab-parallax .tab-content .tab-pane p {
+    line-height: 30px;
+  }
+}
+
 .factor {
   background: #1b1b1b;
   color: #fff;
@@ -1568,7 +1702,7 @@ ul {
   letter-spacing: 1px;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .factor .factor-item {
     padding: 30px 0;
   }
@@ -1646,7 +1780,7 @@ ul {
   opacity: 1;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   .testimonial .testimonial-carousel {
     width: 78%;
   }
@@ -1834,7 +1968,7 @@ footer .secondary-footer .rightCol .secondaryFooter-icon a:hover {
   color: #fff;
 }
 
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 0px) and (max-width: 413px) {
   footer .primary-footer .footer-secondCol ul {
     margin-bottom: 4rem;
   }
