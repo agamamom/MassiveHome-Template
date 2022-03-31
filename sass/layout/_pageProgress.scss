@@ -100,3 +100,47 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(XS) {
+    .page-progress {
+        .progress-overlay {
+            display: none;
+        }
+        .page-content {
+            .page-progress__content {
+                padding: 0 45px;
+                h3 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IP8) {
+    .page-progress {
+        .progress-overlay {
+            display: none;
+        }
+        .page-content {
+            .page-progress__content {
+                h3 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .page-progress {
+        .progress-overlay {
+            display: none;
+        }
+        .page-content {
+            .page-progress__content {
+                h3 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}

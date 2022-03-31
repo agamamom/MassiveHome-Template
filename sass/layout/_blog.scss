@@ -110,3 +110,61 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(XS) {
+    .blog {
+        height: 1190px;
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .row {
+            height: 530px;
+            .blog-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IP8) {
+    .blog {
+        height: 1081px;
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .row {
+            height: 699.11px;
+            .blog-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .blog {
+        height: 1240px;
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .row {
+            height: 699.11px;
+            .blog-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

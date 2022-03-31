@@ -23,3 +23,25 @@
         font-size: 36px;
     }
 }
+// RESPONSIVE
+@include Responsive(XS) {
+    .parallax-banner {
+        h2 {
+            font-size: 2.6rem;
+        }
+    }
+}
+@include Responsive(IP8) {
+    .parallax-banner {
+        h2 {
+            font-size: 2.6rem;
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .parallax-banner {
+        h2 {
+            font-size: 2.6rem;
+        }
+    }
+}

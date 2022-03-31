@@ -80,7 +80,68 @@
         }
     }
 }
+
 // RESPONSIVE
+@include Responsive(XS) {
+    .header {
+        width: 100vw;
+        .navbar {
+            padding: 0;
+            .container-fluid {
+                padding: 0 30px;
+            }
+            .navbar-brand {
+                height: 50px;
+                img {
+                    padding: 0;
+                }
+            }
+            button {
+                padding: 0.25rem 0rem;
+                .navbar-toggler-icon {
+                    i {
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .navbar-collapse {
+                background: white;
+                max-height: 400px;
+                overflow-y: overlay;
+                overflow-x: clip;
+                .nav-item.borderRight {
+                    margin-right: 0;
+                }
+                .nav-link {
+                    color: #000;
+                    border-bottom: solid 1px #f0f0f0;
+                    padding: 12px 20px;
+                    &:hover {
+                        color: $cl-2;
+                    }
+                    .indicator {
+                        float: right;
+                        position: relative;
+                        font-size: 20px;
+                        padding-right: 10px;
+                        line-height: 20px;
+                        &::before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 50px;
+                            width: 0.8px;
+                            background: #f0f0f0;
+                            left: -27px;
+                            bottom: -18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @include Responsive(IP8) {
     .header {
         width: 100vw;
@@ -107,7 +168,8 @@
             .navbar-collapse {
                 background: white;
                 max-height: 400px;
-                overflow-y: auto;
+                overflow-y: overlay;
+                overflow-x: clip;
                 .nav-item.borderRight {
                     margin-right: 0;
                 }
@@ -115,10 +177,15 @@
                     color: #000;
                     border-bottom: solid 1px #f0f0f0;
                     padding: 12px 20px;
+                    &:hover {
+                        color: $cl-2;
+                    }
                     .indicator {
                         float: right;
                         position: relative;
-                        font-size: 10px;
+                        font-size: 20px;
+                        padding-right: 10px;
+                        line-height: 20px;
                         &::before {
                             content: "";
                             display: block;
@@ -126,8 +193,68 @@
                             height: 50px;
                             width: 0.8px;
                             background: #f0f0f0;
-                            left: -20px;
-                            bottom: 0;
+                            left: -27px;
+                            bottom: -18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .header {
+        width: 100vw;
+        .navbar {
+            padding: 0;
+            .container-fluid {
+                padding: 0 30px;
+            }
+            .navbar-brand {
+                height: 50px;
+                img {
+                    padding: 0;
+                }
+            }
+            button {
+                padding: 0.25rem 0rem;
+                .navbar-toggler-icon {
+                    i {
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .navbar-collapse {
+                background: white;
+                max-height: 400px;
+                overflow-y: overlay;
+                overflow-x: clip;
+                .nav-item.borderRight {
+                    margin-right: 0;
+                }
+                .nav-link {
+                    color: #000;
+                    border-bottom: solid 1px #f0f0f0;
+                    padding: 12px 20px;
+                    &:hover {
+                        color: $cl-2;
+                    }
+                    .indicator {
+                        float: right;
+                        position: relative;
+                        font-size: 20px;
+                        padding-right: 10px;
+                        line-height: 20px;
+                        &::before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            height: 50px;
+                            width: 0.8px;
+                            background: #f0f0f0;
+                            left: -27px;
+                            bottom: -18px;
                         }
                     }
                 }

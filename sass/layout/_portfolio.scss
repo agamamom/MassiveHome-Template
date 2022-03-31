@@ -4,6 +4,7 @@
         ul {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             li {
                 margin: 0 15px;
                 letter-spacing: 3px;
@@ -110,6 +111,71 @@
                                 border: 1px solid #fff;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@include Responsive(XS) {
+    .portfolio {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .portfolio-items {
+            height: 2384px;
+            .portfolio-products {
+                .portfolio-item {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@include Responsive(IP8) {
+    .portfolio {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .portfolio-items {
+            height: 2384px;
+            .portfolio-products {
+                .portfolio-item {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .portfolio {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .portfolio-items {
+            height: 1252px;
+            .portfolio-products {
+                .portfolio-item {
+                    width: 50%;
+                    img {
+                        width: 100%;
                     }
                 }
             }

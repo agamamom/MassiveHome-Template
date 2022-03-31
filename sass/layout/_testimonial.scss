@@ -52,3 +52,19 @@
         }
     }
 }
+
+// RESPONSIVE
+@include Responsive(XS) {
+    .testimonial {
+        .testimonial-carousel {
+            width: 78%;
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        width: 224.8px;
+                    }
+                }
+            }
+        }
+    }
+}

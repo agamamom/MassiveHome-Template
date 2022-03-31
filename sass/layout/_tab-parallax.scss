@@ -90,3 +90,82 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(XS) {
+    .tab-parallax {
+        .tab-iconBox {
+            .nav {
+                flex-direction: column;
+                .nav-item {
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    .nav-link {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IP8) {
+    .tab-parallax {
+        .tab-iconBox {
+            .nav {
+                flex-direction: column;
+                .nav-item {
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    .nav-link {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .tab-parallax {
+        .tab-iconBox {
+            .nav {
+                flex-direction: column;
+                .nav-item {
+                    margin-bottom: 10px;
+                    margin-right: 0;
+                    .nav-link {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

@@ -67,6 +67,7 @@ footer {
             padding: 0 30px;
             ul {
                 padding: 0;
+                flex-wrap: wrap;
             }
         }
         .footer-title {
@@ -121,14 +122,99 @@ footer {
                     border-radius: 50%;
                     line-height: 35px;
                     display: inline-block;
-                    margin: 0 0 0 15px;
+
                     color: #5a5a5a;
                     font-size: 20px;
                     transition: all 0.3s;
+                    & + a {
+                        margin: 0 0 0 15px;
+                    }
                     &:hover {
                         background: #7e7e7e;
                         color: $cl-1;
                     }
+                }
+            }
+        }
+    }
+}
+// RESPONSIVE
+@include Responsive(XS) {
+    footer {
+        .primary-footer {
+            .footer-secondCol {
+                ul {
+                    margin-bottom: 4rem;
+                }
+            }
+            .footer-thirdCol {
+                ul {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+        .secondary-footer {
+            .leftCol {
+                line-height: 24px;
+            }
+            .rightCol {
+                margin-top: 10px;
+                .secondaryFooter-icon {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IP8) {
+    footer {
+        .primary-footer {
+            .footer-secondCol {
+                ul {
+                    margin-bottom: 4rem;
+                }
+            }
+            .footer-thirdCol {
+                ul {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+        .secondary-footer {
+            .leftCol {
+                line-height: 24px;
+            }
+            .rightCol {
+                margin-top: 10px;
+                .secondaryFooter-icon {
+                    float: left;
+                }
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    footer {
+        .primary-footer {
+            .footer-secondCol {
+                ul {
+                    margin-bottom: 4rem;
+                }
+            }
+            .footer-thirdCol {
+                ul {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+        .secondary-footer {
+            .leftCol {
+                line-height: 24px;
+            }
+            .rightCol {
+                margin-top: 10px;
+                .secondaryFooter-icon {
+                    float: left;
                 }
             }
         }

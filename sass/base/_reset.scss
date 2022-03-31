@@ -78,3 +78,11 @@ ul {
     line-height: 25px;
     margin-bottom: 50px;
 }
+
+// RESPONSIVE
+
+@media screen and(min-width: 414px) and (max-width: 736px) {
+    .page-content {
+        padding: 50px 0;
+    }
+}

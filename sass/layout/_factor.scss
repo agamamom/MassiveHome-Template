@@ -17,3 +17,25 @@
         letter-spacing: 1px;
     }
 }
+// RESPONSIVE
+@include Responsive(XS) {
+    .factor {
+        .factor-item {
+            padding: 30px 0;
+        }
+    }
+}
+@include Responsive(IP8) {
+    .factor {
+        .factor-item {
+            padding: 30px 0;
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .factor {
+        .factor-item {
+            padding: 30px 0;
+        }
+    }
+}

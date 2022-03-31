@@ -28,10 +28,38 @@
     }
 }
 // RESPONSIVE
+@include Responsive(XS) {
+    .banner {
+        .banner-content {
+            width: 100%;
+            h1 {
+                font-size: 30px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
 @include Responsive(IP8) {
     .banner {
         .banner-content {
-            font-size: 30px;
+            width: 100%;
+            h1 {
+                font-size: 30px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@include Responsive(IPAD) {
+    .banner {
+        .banner-content {
+            width: 100%;
+            h1 {
+                font-size: 30px;
+                white-space: nowrap;
+            }
         }
     }
 }

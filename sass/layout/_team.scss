@@ -112,6 +112,16 @@
         background: #f5f5f5;
         width: 95.4%;
         padding: 40px;
+        .team-hiring--Btn {
+            a {
+                text-decoration: none;
+            }
+            .team-joinBtn {
+                &:hover {
+                    color: $cl-1;
+                }
+            }
+        }
         .team-hiring--content {
             text-align: left;
             h4 {
@@ -130,6 +140,67 @@
                 margin-top: 10px;
                 color: #7e7e7e;
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// RESPONSIVE
+@include Responsive(XS) {
+    .team {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .team-hiring {
+            margin-top: 100px;
+            margin-right: 0;
+            margin-left: 0;
+            width: 100%;
+            .team-hiring--Btn {
+                margin-top: 30px;
+                text-align: left;
+            }
+        }
+    }
+}
+@include Responsive(IP8) {
+    .team {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .team-hiring {
+            margin-top: 100px;
+            margin-right: 0;
+            margin-left: 0;
+            width: 100%;
+            .team-hiring--Btn {
+                margin-top: 30px;
+                text-align: left;
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .team {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .team-hiring {
+            margin-top: 100px;
+            margin-right: 0;
+            margin-left: 0;
+            width: 100%;
+            .team-hiring--Btn {
+                text-align: left;
             }
         }
     }

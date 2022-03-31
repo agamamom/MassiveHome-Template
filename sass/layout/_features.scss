@@ -46,3 +46,50 @@
         }
     }
 }
+// RESPONSIVE
+@include Responsive(XS) {
+    .features {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .features-column {
+            .features-borderBox {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@include Responsive(IP8) {
+    .features {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .features-column {
+            .features-borderBox {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+@include Responsive(IPAD) {
+    .features {
+        .title {
+            font-size: 1.8rem;
+        }
+        .under-title {
+            width: 80%;
+        }
+        .features-column {
+            .features-borderBox {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
